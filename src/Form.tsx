@@ -88,9 +88,6 @@ type AppProps = {
    }
 
    login = () => {
-     console.log(this.props.emails);
-     console.log(this.props.passwords);
-
      const email:string=this.state.emails;
      const pass:string=this.state.passwords;
      const correctPassword:boolean = this.correctPass(email,pass);
