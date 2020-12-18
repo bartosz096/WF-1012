@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-//import * as styles from './App.css'   // było w js
 import Form from './Form'
 const styles = require('./App.css');
 
@@ -10,7 +9,7 @@ const styles = require('./App.css');
       passwords: ['Pass1!', 'Pass2!', 'Pass3!'],
     }
 
-    handleSubmit = (email:string,password:string) => {  //zmienione w ts
+    handleSubmit = (email:string,password:string) => { 
       this.setState({emails: [...this.state.emails, email]})
       this.setState({passwords: [...this.state.passwords, password]})
       console.log(this.state.emails);
