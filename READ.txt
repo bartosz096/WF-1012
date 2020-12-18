@@ -1,0 +1,28 @@
+zrobione w ramach https://miten.atlassian.net/browse/WF-1012
+apka utworzona początkowo jako cra i napisana w js, następnie przerobiona na typescript
+na komendę npm start apka otwiera się jako localhost
+npm test - odpalenie testów (obecnie jest 7, trwają w sumie ok. 30 s), są w pliku src\App.test.ts
+w tests\Test1.side są te same testy w formacie do otworzenia w Selenium IDE, można zobaczyć wizualnie jak to wygląda
+opis testów: 
+checkingCorrectEmail - zalogowanie się jako istniejący user, kliknięcie w link, sprawdzenie czy wyświetlany
+			w alercie mail jest taki sam jak zalogowanego usera
+
+createUser+login - stworzenie nowego usera oraz zalogowanie się na niego
+
+emailValidation - sprawdzenie czy wszystkie pola związane z formularzem istnieją, wpisanie poprawnego 
+		hasła (zgodnego z załozeniami walidacji), sprawdzanie kilku niepoprawnych oraz poprawnych form
+		email w celu stworzenia nowego usera, sprawdzanie czy tworzy się 
+
+loginCorrect - poprawne zalogowanie się na istniejącego usera
+
+loginIncorrect - niepoprawne zalogowanie się na istniejącego usera - wpisywanie niepoprawnego hasła
+
+passValidation - sprawdzenie czy wszystkie pola związane z formularzem istnieją, wpisanie poprawnego 
+		emaila (zgodnego z załozeniami walidacji), sprawdzanie kilku niepoprawnych oraz poprawnych form
+		haseł w celu stworzenia nowego usera, sprawdzanie czy tworzy się 
+
+login+logout - zalogowanie się na istniejącego usera, kliknięcie w link, wylogowanie się, stworzenie nowego usera,
+		zalogowanie się na niego oraz wylogowanie, ponowne zalogowanie (sprawdzenie czy został w "bazie")
+		oraz kliknęcie w link
+
+

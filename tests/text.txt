@@ -1,0 +1,2 @@
+aplikacja otwiera się przez npm start na http://localhost:3000/
+testy uruchamia się jako selenium-side-runner Test1.side
