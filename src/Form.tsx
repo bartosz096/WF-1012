@@ -91,7 +91,7 @@ type AppProps = {
      const email:string=this.state.emails;
      const pass:string=this.state.passwords;
      const correctPassword:boolean = this.correctPass(email,pass);
-     if (correctPassword && email.length>0){    //ewentualnie tutaj zmienione
+     if (correctPassword && email.length>0){ 
        alert('zalogowano poprawnie');
        (document.getElementById('emailInfo')as HTMLInputElement).style.visibility = 'visible';
        this.setState({
